@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<!--     Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+
+    A Bootstrap styled table representing your choice of data.
+    A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.   -->
+
+
+<!--This is where the car data will display -->
+<table class="table table-dark">
+    <thead id="tHead">
+        <th>#</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+    </thead>
+    <tbody id="tBody">
+    </tbody>
+</table>
+<!--For adding in new info about cars for the table-->
+
+<form>
+    <div>
+        <label for="Make" class="form-label">Make</label>
+        <input type="text" class="form-control" id="Make"/>
+    </div>    
+    <div>
+        <label for="Model" class="form-label">Model</label>
+        <input type="text" class="form-control" id="Model"/>
+    </div>    
+    <div>
+        <label for="Year" class="form-label">Year</label>
+        <input type="text" class="form-control" id="Year"/>
+    </div>
+    <button type="submit" class="btn btn-primary" id="formSubmit">
+    Submit
+    </button>
+</form>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
